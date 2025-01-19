@@ -41,7 +41,7 @@ export const User_Input = styled.input.attrs({
     type: 'text',
     placeholder: 'Username',
 })`
-    width: 25.4vw;
+    width: 24.4vw;
     height: 5vh;
     margin-left: 2vw;
     margin-bottom: 10px;
@@ -49,15 +49,36 @@ export const User_Input = styled.input.attrs({
     height: 6vh;
     margin-top: 1vh;
     margin-bottom: 2vh;
+    padding-left: 1vw;
     border-radius: 15px;
     border: none;
-    `;
+    ::placeholder {
+        color: #aaa;
+        font-size: 1rem;
+        transform: translateY(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:focus::placeholder {
+        font-size: 0.8rem;
+        color: #ddd;
+        transform: translateY(-10px); 
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:not(:focus)::placeholder {
+        font-size: 1rem;
+        color: #aaa;
+        transform: translateY(0); 
+        transition: all 0.3s ease-in-out;
+    }
+`;
 
 export const Phone_Input = styled.input.attrs({
     type: 'text',
     placeholder: 'Phone Number',
 })`
-    width: 25.4vw;
+    width: 24.4vw;
     height: 5vh;
     margin-left: 2vw;
     margin-bottom: 10px;
@@ -65,15 +86,36 @@ export const Phone_Input = styled.input.attrs({
     height: 6vh;
     margin-top: 1vh;
     margin-bottom: 2vh;
+    padding-left: 1vw;
     border-radius: 15px;
     border: none;
+    ::placeholder {
+        color: #aaa;
+        font-size: 1rem;
+        transform: translateY(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:focus::placeholder {
+        font-size: 0.8rem;
+        color: #ddd;
+        transform: translateY(-10px); 
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:not(:focus)::placeholder {
+        font-size: 1rem;
+        color: #aaa;
+        transform: translateY(0); 
+        transition: all 0.3s ease-in-out;
+    }
 `;
 
 export const Email_Input = styled.input.attrs({
     type: 'text',
     placeholder: 'Email',
 })`
-    width: 25.4vw;
+    width: 24.4vw;
     height: 5vh;
     margin-left: 2vw;
     margin-bottom: 10px;
@@ -81,15 +123,36 @@ export const Email_Input = styled.input.attrs({
     height: 6vh;
     margin-top: 1vh;
     margin-bottom: 2vh;
+    padding-left: 1vw;
     border-radius: 15px;
     border: none;
+    ::placeholder {
+        color: #aaa;
+        font-size: 1rem;
+        transform: translateY(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:focus::placeholder {
+        font-size: 0.8rem;
+        color: #ddd;
+        transform: translateY(-10px); 
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:not(:focus)::placeholder {
+        font-size: 1rem;
+        color: #aaa;
+        transform: translateY(0); 
+        transition: all 0.3s ease-in-out;
+    }
 `;
 
 export const Password_Input = styled.input.attrs({
     type: 'password',
     placeholder: 'Password',
 })`
-    width: 25.4vw;
+    width: 24.4vw;
     height: 5vh;
     margin-left: 2vw;
     margin-bottom: 10px;
@@ -97,15 +160,36 @@ export const Password_Input = styled.input.attrs({
     height: 6vh;
     margin-top: 1vh;
     margin-bottom: 2vh;
+    padding-left: 1vw;
     border-radius: 15px;
     border: none;
+    ::placeholder {
+        color: #aaa;
+        font-size: 1rem;
+        transform: translateY(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:focus::placeholder {
+        font-size: 0.8rem;
+        color: #ddd;
+        transform: translateY(-10px); 
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:not(:focus)::placeholder {
+        font-size: 1rem;
+        color: #aaa;
+        transform: translateY(0); 
+        transition: all 0.3s ease-in-out;
+    }
 `;
 
 export const Confirm_Password_Input = styled.input.attrs({
     type: 'password',
     placeholder: 'Confirm Password',
 })`
-    width: 25.4vw;
+    width: 24.4vw;
     height: 5vh;
     margin-left: 2vw;
     margin-bottom: 10px;
@@ -113,8 +197,29 @@ export const Confirm_Password_Input = styled.input.attrs({
     height: 6vh;
     margin-top: 1vh;
     margin-bottom: 2vh;
+    padding-left: 1vw;
     border-radius: 15px;
     border: none;
+    ::placeholder {
+        color: #aaa;
+        font-size: 1rem;
+        transform: translateY(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:focus::placeholder {
+        font-size: 0.8rem;
+        color: #ddd;
+        transform: translateY(-10px); 
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:not(:focus)::placeholder {
+        font-size: 1rem;
+        color: #aaa;
+        transform: translateY(0); 
+        transition: all 0.3s ease-in-out;
+    }
 `;
 
 export const Button = styled.div`
